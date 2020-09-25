@@ -1,0 +1,2 @@
+[] Add support for `name` instead of `prefix` from `environment.yml` files
+[] Have `autoconda` choose between `name` and `prefix` automatically
