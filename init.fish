@@ -72,9 +72,11 @@ function autoconda --on-variable PWD -d "Automatic activation of Python virtual 
     if test "$autoconda_debug" = "yes"; echo "PWD = $PWD"; end
 
     # Check to see if our CWD is inside the conda environment's root.
-    if set -q __autoconda_old
+    if test -n "$__autoconda_old"
+      if test "$autoconda_debug" = "yes"; echo "Testing _dir"; end
       set _dir (string match "$__autoconda_old*" "$PWD")
     else
+      if test "$autoconda_debug" = "yes"; echo "Setting _dir"; end
       set _dir ""
     end
     if test "$autoconda_debug" = "yes"; echo "_dir = $_dir"; end
