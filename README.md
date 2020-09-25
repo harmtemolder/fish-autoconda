@@ -31,5 +31,7 @@ Upon entering a directory that contains an `environment.yml` file—or any direc
 <code>set -U autoconda_debug yes/<b>no</b></code>:
   Adds extreme verbosity for debugging.
 
+(**Bold** are defaults.)
+
 ## License
 [MIT](http://opensource.org/licenses/MIT) © [Harm te Molder](https://github.com/harmtemolder)
